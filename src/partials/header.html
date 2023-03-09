@@ -1,23 +1,63 @@
 <header id="header">
-    <div class="container container--modicator">
-        <a href="#product" class="image__link--icecream">
-            <picture>
-                <img src="/src/images/ice-header.png" alt="Imagen de helado">
-            </picture>
+  <div class="container container--modicator">
+    <div class="menu">
+      <div class="menu__logo">
+        <a href="#">
+          <svg class="icon-logo" width="220">
+            <use href="/src/images/symbol-defs.svg#icon-logo"></use>
+          </svg>
         </a>
-        <div class="title">
-            <div>
-                <h1 class="title__main">ice cream <br> made with <br> <span class="title__passion">passion</span>
-                </h1>
-                <div class="button">
-                    <button class="button__one">
-                        <a href="#product" class="button__one-link">Products</a>
-                    </button>
-                    <button class="button__two">
-                        <a href="" class="title__button-tow-link">How it’s made?</a>
-                    </button>
-                </div>
-            </div>
-        </div>
+      </div>
+      <div class="menu__nav">
+        <a href="#">
+          <svg class="icon-burger" width="50">
+            <use href="/src/images/symbol-defs.svg#icon-burger"></use>
+          </svg>
+        </a>
+        <nav class="navigation">
+          <ul class="navigation__desktop">
+            <li class="item"><a class="link-item" href="#">Home</a></li>
+            <li class="item"><a class="link-item" href="#">About Us</a></li>
+            <li class="item">
+              <a class="link-item" href="#">How It's Made?</a>
+            </li>
+            <li class="item">
+              <a class="link-item" href="#product">Our Products</a>
+            </li>
+            <li class="item"><a class="link-item" href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="menu__switch">
+        <button class="btn--buynow">
+          <a class="link" href="#"
+            ><span class="buy">Buy Now</span
+            ><span class="greater-than">&gt</span></a
+          >
+        </button>
+      </div>
     </div>
+    <a href="#product" class="image__link--icecream">
+      <picture>
+        <img src="/src/images/ice-header.png" alt="Imagen de helado" />
+      </picture>
+    </a>
+    <div class="title">
+      <div>
+        <h1 class="title__main">
+          ice cream <br />
+          made with <br />
+          <span class="title__passion">passion</span>
+        </h1>
+        <div class="button">
+          <button class="button__one">
+            <a href="#product" class="button__one-link">Products</a>
+          </button>
+          <button class="button__two">
+            <a href="" class="title__button-tow-link">How it’s made?</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 </header>
