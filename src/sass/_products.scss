@@ -1,13 +1,19 @@
+html,
 body {
   width: 100% !important;
   overflow-x: hidden !important;
 }
 
 .container {
-  width: 280px;
+  width: 320px;
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
+}
+.container__products {
+  list-style: none;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .subtitle__products {
@@ -15,13 +21,24 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 1.17;
   text-align: center;
   text-transform: uppercase;
   color: #ffa5ba;
   padding-top: 60px;
   margin-top: 0;
   margin-bottom: 15px;
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition-property: letter-spacing;
+}
+.subtitle__products:hover {
+  animation: springy-text;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
 }
 
 .title__products {
@@ -29,13 +46,24 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 34px;
-  line-height: 39px;
+  line-height: 1.15;
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #d41443;
   margin-top: 0;
   margin-bottom: 8px;
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition-property: letter-spacing;
+}
+.title__products:hover {
+  animation: springy-text;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
 }
 
 .products {
@@ -180,6 +208,17 @@ body {
     width: 100%;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .section__products {
+    padding-top: 122px;
+    padding-bottom: 112px;
+  }
+  .container {
+    max-width: 768px;
+    padding: 0 35px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .container {
     width: 768px;
@@ -195,12 +234,15 @@ body {
   }
   .container__product--label--1 {
     width: 224px;
+    top: 200px;
   }
   .container__product--label--2 {
     width: 224px;
+    top: 200px;
   }
   .container__product--label--3 {
     width: 224px;
+    top: 200px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -218,11 +260,17 @@ body {
   }
   .container__product--label--1 {
     width: 368px;
+    height: 535px;
+    top: 280px;
   }
   .container__product--label--2 {
     width: 368px;
+    height: 535px;
+    top: 280px;
   }
   .container__product--label--3 {
     width: 368px;
+    height: 535px;
+    top: 280px;
   }
 }
