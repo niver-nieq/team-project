@@ -16,6 +16,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: linear-gradient(
+    to bottom,
+    #fff5f6 0%,
+    #fff5f6 50%,
+    #fff 50%,
+    #fff 100%
+  );
 }
 
 .container_num1,
